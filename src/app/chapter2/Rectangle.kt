@@ -32,3 +32,9 @@ fun mix(c1: Color, c2: Color) = {
         else -> throw Exception("Unknown color")
     }
 }
+
+fun mixOptimized(c1: Color, c2: Color) =
+    when {
+        (c1 == Color.RED && c2 == Color.ORANGE) -> Color.ORANGE
+        else -> throw Exception("Unknown color")
+    }
